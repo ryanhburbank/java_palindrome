@@ -6,7 +6,7 @@ public class palindrome {
     System.out.println(isPalindrome(word));    
   }
 
-  public static int isPalindrome(String str){
+  private static int isPalindrome(String str){
     int n = str.length();
     for ( int i = 0; i < n/2; i ++ )
       if (str.charAt(i) != str.charAt(n-i-1)) return -1;
